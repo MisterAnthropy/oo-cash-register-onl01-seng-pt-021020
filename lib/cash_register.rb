@@ -1,7 +1,7 @@
 #binding.pry 
 class CashRegister
   
-  attr_accessor :total, :discount, :price, :items
+  attr_accessor :total, :discount, :price, :items, :last_transaction 
   
   def initialize(discount = 0)
     @total = 0
@@ -34,10 +34,8 @@ class CashRegister
   end
   
   def void_last_transaction
-      quantity = self.price[2]
-    quantity.times do
-      self.items.pop
-      self.total -= self.price[1]
+    @last_transaction = @total - @price
+    
   end
 end
 end
