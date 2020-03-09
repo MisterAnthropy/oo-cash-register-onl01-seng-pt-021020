@@ -13,6 +13,6 @@ class CashRegister
     @items = items
     @price = price
     
-    
+  end
   
 end
