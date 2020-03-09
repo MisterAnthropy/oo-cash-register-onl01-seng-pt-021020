@@ -40,3 +40,4 @@ class CashRegister
       self.total -= self.price[1]
   end
 end
+end
