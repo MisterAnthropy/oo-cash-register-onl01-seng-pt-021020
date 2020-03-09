@@ -1,7 +1,7 @@
 #binding.pry 
 class CashRegister
   
-  attr_accessor :total, :discount, :price, :total
+  attr_accessor :total, :discount, :price,:total
   
   def initialize(discount = 0)
     @total = 0
