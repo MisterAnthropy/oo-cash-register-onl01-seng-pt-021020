@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 class CashRegister
   
@@ -38,9 +38,6 @@ class CashRegister
     @total -= @price
     @last_transaction
     
-    
-    
-    
   end
-
+binding.pry
 end
