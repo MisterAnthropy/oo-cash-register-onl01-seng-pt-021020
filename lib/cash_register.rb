@@ -18,8 +18,10 @@ class CashRegister
       @items << item
       counter += 1
     end
-    else
+    elsif
       @items << item
+    else 
+      @total 
     end
   end
   
