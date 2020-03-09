@@ -1,10 +1,10 @@
 class CashRegister
   
-  attr_accessor :total, :emash_register_with_discount
+  attr_accessor :total, :employee_discount
   
-  def initialize(cash_register_with_discount = nil)
+  def initialize(employee_discount = nil)
     @total = 0.00
-    @cash_register_with_discount = cash_register_with_discount
+    @employee_discount = 20
   end
   
 end
